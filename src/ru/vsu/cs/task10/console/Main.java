@@ -27,9 +27,9 @@ public class Main {
         double[] second = new double[2];
         double[] third = new double[2];
         double maxSquare = 0;
-        for (int i = 0; i < point.x.length - 2; i++) {
-            for (int j = 0; j < point.x.length - 1; j++) {
-                for (int k = 0; k < point.x.length; k++) {
+        for (int i = 0; i < point.getX().length - 2; i++) {
+            for (int j = 0; j < point.getX().length - 1; j++) {
+                for (int k = 0; k < point.getX().length; k++) {
                     double square = Math.abs(((point.getX()[i] - point.getX()[k]) * (point.getY()[j] - point.getY()[k])
                             - (point.getX()[j] - point.getX()[k]) * (point.getY()[i] - point.getY()[k])) / 2);
                     if (square > maxSquare) {

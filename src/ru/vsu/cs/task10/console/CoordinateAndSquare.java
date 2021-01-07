@@ -1,10 +1,10 @@
 package ru.vsu.cs.task10.console;
 
 public class CoordinateAndSquare {
-    Point firstPoint;
-    Point secondPoint;
-    Point thirdPoint;
-    double square;
+    private final Point firstPoint;
+    private final Point secondPoint;
+    private final Point thirdPoint;
+    private final double square;
 
     public CoordinateAndSquare(Point firstPoint, Point secondPoint, Point thirdPoint, double square) {
         this.firstPoint = firstPoint;
